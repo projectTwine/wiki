@@ -1,0 +1,1726 @@
+steviejay 
+[4:23 PM] 
+@mihirdubey1 yo as you go through and tag shit
+
+
+[4:23] 
+can you let me know what stuff u did like or didnt like
+
+
+mihirdubey1 [6:42 PM] 
+ya for sure
+
+
+steviejay 
+[6:42 PM] 
+ok
+
+
+[6:42] 
+so here's what im thinking
+
+
+[6:42] 
+so we have the concept
+
+
+[6:42] 
+of a twine
+
+
+[6:42] 
+a thread
+
+
+[6:42] 
+im thinking what u and i are both thinking
+
+
+[6:42] 
+is that we need what we should call "forks"
+
+
+[6:42] 
+for now
+
+
+[6:43] 
+its a point in a twine where a thread evokes particular questions
+
+
+[6:43] 
+like
+
+
+mihirdubey1 [6:43 PM] 
+that's a good name
+
+
+[6:43] 
+fork is like multiple options to continue from?
+
+steviejay 
+[6:43 PM] 
+i guess at these forks we expect the learner to have questions and may be pointed at multiple threads
+
+[6:43] 
+yeah
+
+
+[6:43] 
+exactly
+
+
+[6:44] 
+im not quite sure how to handle it design wise quite yet
+
+
+mihirdubey1 [6:44 PM] 
+one thing I was thinking
+
+
+steviejay 
+[6:44 PM] 
+but i do need to build this out
+
+
+[6:44] 
+go
+
+
+mihirdubey1 [6:44 PM] 
+is in this "web"
+
+
+[6:44] 
+it doesn't necessarily have to be easy to see all the connections graphically
+
+
+[6:44] 
+we only need to see the immediate connections
+
+
+[6:44] 
+sort of like youtube recommended videos
+
+
+steviejay 
+[6:44 PM] 
+yeah
+
+
+[6:45] 
+totally i had the same thought
+
+
+mihirdubey1 [6:45 PM] 
+a lot of videos connect to any recommended video but the user doesn't have to see every connection
+
+
+[6:45] 
+just the immediate ones
+
+
+[6:45] 
+so in the backend
+
+
+steviejay 
+[6:45 PM] 
+yeah i think its up to us to narrow those options down as much as possible
+
+
+[6:45] 
+but let them know that we did our research
+
+
+mihirdubey1 [6:45 PM] 
+we can have all the connections in a table / chart format
+
+
+steviejay 
+[6:45 PM] 
+btw im gna start taking notes on all of this
+
+
+[6:45] 
+and put it onto a repo
+
+
+mihirdubey1 [6:45 PM] 
+and some key / ID links kind of stuff
+
+
+steviejay 
+[6:45 PM] 
+yeah
+
+[6:46] 
+wait thats exactly what im working on rn
+
+[6:46] 
+cuz i have no idea
+
+mihirdubey1 [6:46 PM] 
+but on the front end very user friendly
+
+steviejay 
+[6:46 PM] 
+what this data should look like
+
+[6:46] 
+can u demonstrate it for me
+
+[6:46] 
+it would be super helpful
+
+mihirdubey1 [6:46 PM] 
+which data
+
+steviejay 
+[6:46 PM] 
+like how we would represent
+
+mihirdubey1 [6:46 PM] 
+data we want to collect or data on the resources
+
+steviejay 
+[6:46 PM] 
+something like this
+
+[6:46] 
+both
+
+mihirdubey1 [6:46 PM] 
+ok let's start with data to collect
+
+steviejay 
+[6:46 PM] 
+i think firstly the resources how they link to each other
+
+[6:46] 
+yeah
+
+mihirdubey1 [6:46 PM] 
+sorry i mena reource
+
+
+[6:46] 
+resource
+
+
+[6:46] 
+collect is like ML afterwards
+
+
+[6:46] 
+we need resources first
+
+
+[6:47] 
+so I'm thinking we have like an initial thread / node
+
+
+[6:47] 
+give it a key of "1"
+
+
+[6:47] 
+or maybe "A"
+
+
+[6:48] 
+well something unique actually
+
+
+[6:48] 
+like a unique ID
+
+
+[6:48] 
+then other resources can have data that states how they are related to that resources unique ID
+
+
+[6:48] 
+as well as their own unique ID
+
+
+[6:48] 
+that may not work perfectly once we have a ton of connections
+
+
+steviejay 
+[6:49 PM] 
+o ya thats easy
+
+
+[6:49] 
+thats already done in most dbs
+
+
+mihirdubey1 [6:49 PM] 
+ya
+
+
+[6:49] 
+but just kind of have to keep track of the connections
+
+
+steviejay 
+[6:49 PM] 
+oh yeah i guess ur right
+
+
+[6:49] 
+since each thread might have a one to many relationship to other threads
+
+
+[6:50] 
+its going to be hard to model in a table
+
+
+mihirdubey1 [6:50 PM] 
+its easy enough to do, I'm just wondering how complicated it gets once once node leads to another node which leads back to a node above the original lol
+
+steviejay 
+[6:50 PM] 
+here let's start with a concept we both somewhat know that's not ML
+
+[6:50] 
+let's say like
+
+[6:50] 
+for our "prototypical example"
+
+[6:50] 
+Algebra
+
+[6:50] 
+Algebra requires Arithmetic (edited)
+
+[6:51] 
+Let's say the Arithmetic twine has 5 resources
+
+[6:51] 
+resource  1 -> 2 -> 3
+                  \
+                    4---->5
+
+[6:51] 
+let's say it looks like that
+
+mihirdubey1 [6:51 PM] 
+those are threads under arithmetic ?
+
+steviejay 
+[6:52 PM] 
+yeah
+
+mihirdubey1 [6:52 PM] 
+are the following each other
+
+[6:52] 
+like is 2 under 1 or to the side of 1
+
+steviejay 
+[6:52 PM] 
+2 is just after 1
+
+[6:52] 
+thats all we know in my head
+
+[6:52] 
+4 is also after 1
+
+[6:52] 
+but 5 is only after 1,4
+
+[6:52] 
+i hav no clue how to model this
+
+mihirdubey1 [6:53 PM] 
+oh ok makes sense
+
+[6:53] 
+so I think we would need to put it as 2 entries
+
+[6:53] 
+like
+
+[6:53] 
+1 -> 2 -> 3
+
+[6:53] 
+1 -> 4 -> 5
+
+[6:53] 
+in a table
+
+[6:53] 
+but its more like
+
+steviejay 
+[6:53 PM] 
+ok
+
+mihirdubey1 [6:53 PM] 
+1 -> 2 -> 3
+
+[6:54] 
+1 -> 2 -> 6
+
+[6:54] 
+1 -> 2 -> 7
+
+steviejay 
+[6:54 PM] 
+wait whered 6 and 7 come from
+
+[6:54] 
+are u saying after 2
+
+[6:54] 
+u can go to 3,6,7
+
+mihirdubey1 [6:54 PM] 
+like there would be other things after 2
+
+[6:54] 
+so just pointing out it branches quickly
+
+[6:54] 
+i mean as long as we have the processing speed, its ok if it branches
+
+[6:54] 
+the real problem becomes when 1 comes before and after 3
+
+[6:55] 
+like
+
+[6:55] 
+1 -> 2 -> 3 -> 1
+
+steviejay 
+[6:55 PM] 
+yeah we'd have a cycle
+
+[6:55] 
+what concerns you there though
+
+[6:55] 
+like that the UI would stop making sense ?
+
+mihirdubey1 [6:56 PM] 
+well actually if that happens
+
+[6:56] 
+we just cut it off there
+
+steviejay 
+[6:56 PM] 
+yeah exactly
+
+mihirdubey1 [6:56 PM] 
+and 1 starts again
+
+[6:56] 
+ahh ok that works
+
+steviejay 
+[6:56 PM] 
+https://en.wikipedia.org/wiki/Cycle_detection
+Wikipedia
+Cycle detection
+In computer science, cycle detection or cycle finding is the algorithmic problem of finding a cycle in a sequence of iterated function values.
+For any function f that maps a finite set S to itself, and any initial value x0 in S, the sequence of iterated function values Show more…
+
+[6:56] 
+it's totally doable
+
+[6:56] 
+Floyd's Tortoise and Hare
+
+[6:56] 
+lmfao this is an interview q
+
+[6:57] 
+im probably going to have to find a way to log all of our conversations
+
+[6:57] 
+so we dont keep solving the same problems over
+
+[6:57] 
+okay but my problem is how we model this moreover
+
+[6:57] 
+do we just model it as an actual graph?
+
+mihirdubey1 [6:58 PM] 
+model as in for design right
+
+[6:58] 
+& do you mean for the user or for us
+
+steviejay 
+[6:58 PM] 
+no still theoretically
+
+[6:58] 
+for us
+
+[6:58] 
+for example, it seems like this is a directed graph
+
+[6:58] 
+where a thread is a node
+
+[6:58] 
+a thread points to its parent or child
+
+mihirdubey1 [6:59 PM] 
+yeah essentially
+
+steviejay 
+[6:59 PM] 
+my end-goal rn is how do we make it possible for us to start curating material
+
+mihirdubey1 [6:59 PM] 
+its basically just the type of graphs we learned CS 150s
+
+steviejay 
+[6:59 PM] 
+ok
+
+mihirdubey1 [6:59 PM] 
+it doesn't even have to work both ways, just one direction
+
+[6:59] 
+i think
+
+steviejay 
+[6:59 PM] 
+ok
+
+[6:59] 
+i think for prototyping im not going to use a graph database
+
+mihirdubey1 [6:59 PM] 
+well i mean for the user it does but for our purposes just one way
+
+steviejay 
+[6:59 PM] 
+and just use a relational one
+
+[7:00] 
+i hav a feeling in the future we'll have to actually use a graph db
+
+[7:00] 
+which is insane
+
+mihirdubey1 [7:00 PM] 
+I think relational would work even in future
+
+[7:01] 
+well maybe idk, why would we need graph
+
+steviejay 
+[7:01 PM] 
+well im not sure how we would put it into a table
+
+[7:01] 
+it doesnt seem natural
+
+[7:01] 
+im even struggling to put it into a spreadsheet rn
+
+[7:01] 
+like think
+
+mihirdubey1 [7:01 PM] 
+I think how we were describing before works
+
+[7:02] 
+ok so lets take Mathematics
+
+[7:02] 
+as parent node
+
+
+[7:02] 
+Then take Algebra Geometry and Topology as child nodes for that Mathematics (edited)
+
+
+[7:02] 
+now assume ID's are just the names
+
+
+[7:02] 
+so Mathematics ID is Mathematics, Algebra's ID is Algebra
+
+
+[7:03] 
+doesn't have to be that way actually but just for now
+
+
+[7:03] 
+Then in the table Math would show up 3 times in our left most column
+
+
+[7:03] 
+and in second left column would be Algebra, Geometry, and Artithmetic
+
+
+steviejay 
+[7:04 PM] 
+so ur saying we have a table per twine? (edited)
+
+
+mihirdubey1 [7:05 PM] 
+Well we could but I'm saying more like this
+
+
+[7:05] 
+ok lemme use Excel real quick
+
+
+steviejay 
+[7:05 PM] 
+yeah
+
+
+[7:05] 
+wait
+
+
+[7:05] 
+use google sheets
+
+
+[7:05] 
+so i can see
+
+
+mihirdubey1 [7:05 PM] 
+ok one sec
+
+
+[7:07] 
+https://docs.google.com/spreadsheets/d/1f4YX3e60FGYw0iSVYhz7G69k1AnK0guu2lnIjTS421g/edit?usp=sharing
+
+
+[7:07] 
+https://docs.google.com/spreadsheets/d/1f4YX3e60FGYw0iSVYhz7G69k1AnK0guu2lnIjTS421g/edit?usp=sharing
+
+
+[7:07] 
+second one can be edited
+
+
+[7:09] 
+what do ylu mean extend to right?
+
+steviejay 
+[7:09 PM] 
+here you have a table
+
+[7:09] 
+set to 3 nodes
+
+[7:09] 
+maximum
+
+[7:09] 
+unless you do this
+
+mihirdubey1 [7:09 PM] 
+oh ya so there's two options
+
+[7:09] 
+either we just go 2 nodes deep
+
+[7:10] 
+and every node also starts as a parent node
+
+[7:10] 
+so MATHEMATICS ALGEBRA & ALGEBRA VARIABLES are two different row
+
+[7:10] 
+rows
+
+steviejay 
+[7:10 PM] 
+gotcha
+
+mihirdubey1 [7:10 PM] 
+or, we could insert a new row each time
+
+steviejay 
+[7:10 PM] 
+i can see that being a good start
+
+[7:10] 
+definitely tough though
+
+mihirdubey1 [7:10 PM] 
+so we could do
+
+[7:11] 
+MATHEMATICS ALGEBRA VARIABLES MULTIPLICATION
+
+[7:11] 
+and MATHEMATICS ALGEBRA VARIABLES ADDITION
+
+[7:11] 
+as two separate rows
+
+[7:12] 
+i'll be back in 5 in
+
+[7:12] 
+min
+
+steviejay 
+[7:12 PM] 
+im confused lmao
+
+[7:12] 
+ok
+
+steviejay 
+[7:17 PM] 
+okay so this is essentially an edge list
+
+mihirdubey1 [7:26 PM] 
+what is an edge list
+
+steviejay 
+[7:26 PM] 
+its just a list that represents a connection
+
+[7:26] 
+the way youve represented it
+
+mihirdubey1 [7:26 PM] 
+ok ya, i'm basically basing this off the data at Visa lol
+
+[7:26] 
+well the fraud data my team collects
+
+[7:26] 
+this is basically how we model sit
+
+[7:27] 
+it*
+
+steviejay 
+[7:27 PM] 
+yeah its an edge list it might work for now
+
+[7:27] 
+they probably thought this through too
+
+mihirdubey1 [7:27 PM] 
+like there's a few million rows in our database
+
+[7:27] 
+so its possible to contain that much
+
+steviejay 
+[7:27 PM] 
+yeah
+
+[7:27] 
+the downside is when you have to search
+
+[7:27] 
+for a node and its connections
+
+[7:27] 
+you end up doing a linear search across all rows
+
+[7:28] 
+but i think its fine
+
+[7:28] 
+as a starting point
+
+[7:28] 
+if visa optimized it
+
+[7:28] 
+we could probably as well
+
+mihirdubey1 [7:28 PM] 
+well which one are we talking about
+
+[7:28] 
+the one we have on the sheet
+
+[7:28] 
+or the one where we just list two nodes
+
+steviejay 
+[7:28 PM] 
+just 2 nodes
+
+mihirdubey1 [7:29 PM] 
+ahh ok for Visa I meant the one on the sheet but I think for our purposes 2 nodes could work better
+
+[7:30] 
+ok i made it like that on the second google sheet
+
+[7:30] 
+for the two node one
+
+[7:30] 
+do you think that works better?
+
+steviejay 
+[7:30 PM] 
+im not 100% sure
+
+[7:31] 
+i think it'll be easier to handle at the beginning
+
+[7:31] 
+https://neo4j.com/blog/social-networks-in-the-database-using-a-graph-database/
+Neo4j Graph Database
+Social Networks in the Database: Using a Graph Database
+Read about Lonrezo Alberton's article: Graphs in the database: SQL meets social networks and read about how to use Neo4j as a graph database.
+Sep 15th, 2009 at 7:43 AM
+ 
+
+[7:31] 
+this is a whole subject lmao
+
+mihirdubey1 [7:32 PM] 
+I guess for looking at the larger twines the first one is better but for finding individual threads, the second one is better
+
+[7:32] 
+cause in the first one we can see the extended twine
+
+[7:32] 
+in the second one, we have to keep searching for the next node
+
+[7:32] 
+we might be able to set it up to make both tables
+
+[7:32] 
+for  now
+
+steviejay 
+[7:33 PM] 
+okay. i'll do some research on graph dbs later
+
+[7:33] 
+it could give us an edge (HA)
+
+[7:33] 
+in the future
+
+mihirdubey1 [7:33 PM] 
+ok hoe
+
+steviejay 
+[7:33 PM] 
+okay
+
+[7:33] 
+i also encourage you to read
+
+[7:33] 
+on like alternative representations
+
+[7:33] 
+theres like adjacency matrices
+
+[7:33] 
+and shit
+
+[7:33] 
+im not good at them
+
+[7:33] 
+so ill read em too
+
+mihirdubey1 [7:34 PM] 
+ok ya I'll do some research
+
+[7:34] 
+will read this pdf u sent also
+
+steviejay 
+[7:34 PM] 
+i havent read it
+
+[7:34] 
+but i should
+
+[7:34] 
+also i invited u to their slack
+
+[7:34] 
+they represent their data
+
+[7:34] 
+using JSON so just nested
+
+[7:34] 
+but that's non-relational
+
+[7:34] 
+so i assume they're going to extend into something like mongodb
+
+steviejay 
+[7:35 PM] 
+added this JavaScript/JSON snippet
+
+   "text": "tools",
+   "url": "",
+   "fx": 27.41551971435547,
+   "fy": -64.9805793762207,
+Add Comment Click to expand inline 34 lines
+
+steviejay 
+[7:35 PM] 
+check it
+
+[7:35] 
+see how the nodes have nodes inside
+
+[7:35] 
+no way that's going into a relational DB
+
+[7:36] 
+okay i have so many things i need to discuss
+
+[7:36] 
+so i can get this off the ground faster
+
+mihirdubey1 [7:37 PM] 
+a little confused how this format is different
+
+steviejay 
+[7:37 PM] 
+its still a graph
+
+[7:37] 
+but if they were to represent it your way
+
+[7:37] 
+it would be more like
+
+steviejay 
+[7:38 PM] 
+added this JavaScript/JSON snippet
+ROW 1 ------>
+   "text": "tools",
+   "url": "",
+   "fx": 27.41551971435547,
+   "fy": -64.9805793762207,
+Add Comment Click to expand inline 30 lines
+
+steviejay 
+[7:39 PM] 
+basically only holding the relation to its direct neighbor (i.e. child in this case)
+
+[7:39] 
+i added row annotations
+
+mihirdubey1 [7:39 PM] 
+so is it like the first column doesn't have a bunch of repeat values now
+
+[7:40] 
+in the relational ?
+
+steviejay 
+[7:40 PM] 
+yeah i changed "nodes" to "childNode" (singular)
+
+[7:40] 
+oh in terms of columns
+
+[7:40] 
+its not really represented as columns here
+
+[7:40] 
+at all
+
+mihirdubey1 [7:40 PM] 
+well the data inside each node are like columns right
+
+steviejay 
+[7:41 PM] 
+each node is a row
+
+[7:41] 
+er we can hop on a call and talk about it i guess later
+
+[7:41] 
+but what they're doing is not an edge list
+
+[7:41] 
+i was just reading this
+
+[7:41] 
+https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
+khanacademy.org
+Khan Academy
+Read and learn for free about the following article: Representing graphs (11kB)
+
+[7:42] 
+and it clears up a bit
+
+[7:42] 
+okay but before u read that
+
+[7:42] 
+i have a more urgent topic
+
+[7:42] 
+while i have u here
+
+[7:42] 
+first view
+
+steviejay 
+[7:42 PM] 
+uploaded this image: Screen Shot 2017-08-14 at 4.42.35 PM.png
+Add Comment
+
+steviejay 
+[7:43 PM] 
+uploaded this image: Screen Shot 2017-08-14 at 4.42.55 PM.png
+Add Comment
+
+steviejay 
+[7:43 PM] 
+second view
+
+[7:43] 
+tbh im not totally sure if this is the right design to go with
+
+[7:43] 
+im not sure what to put bellow each Twine (right now it just has go to discussion, # of threads, and "coverage" (i have no clue what that is)
+
+[7:44] 
+the second view is the thread view
+
+[7:44] 
+i should try to flesh out the fork view
+
+[7:44] 
+ok feedback
+
+mihirdubey1 [7:46 PM] 
+ya so I think the fork view would be good
+
+[7:46] 
+only to one child node level though
+
+[7:46] 
+so you have a parents and then the top 3 child node recommendations come up in a fork format
+
+[7:46] 
+If the user doesn't like those 3, they could click something that offers another 3 ?
+
+steviejay 
+[7:46 PM] 
+hmm
+
+[7:47] 
+i think ideally we only offer them 3 at max
+
+[7:47] 
+at all
+
+[7:47] 
+but i gues that necessitates our recommendations being really really fuckign good
+
+[7:47] 
+keep going i'll stop talking cuz i wanna hear what u thnk
+
+[7:47] 
+just braindump it on
+
+mihirdubey1 [7:47 PM] 
+yeah its a trade off of too much content vs keeping them on track
+
+[7:47] 
+actually its prob more important to provide some focus
+
+[7:48] 
+or we could offer a side list of possible other topics that we're less confident about
+
+[7:48] 
+actually might be too distracting
+
+[7:48] 
+I think it could be important to have them see up to 5 or 6 options
+
+[7:48] 
+maybe not in 1 view
+
+[7:49] 
+it could surround the parent node all the way around if we want to do 1 view
+
+[7:49] 
+like in a circle
+
+[7:49] 
+or they could refresh to see 3 more
+
+[7:49] 
+i guess if we are confident about our recs we could just do 3 but right now, I'm not sure we can be that confident
+
+[7:49] 
+and our differentiation is that we tailor things to them
+
+[7:50] 
+keeping them on track is impt but not what differentiates as much
+
+steviejay 
+[7:50 PM] 
+oky
+
+[7:50] 
+that also brings up a more imoprtant question for us
+
+[7:50] 
+do we generate recommendations based on the user
+
+[7:50] 
+or the resource
+
+[7:50] 
+or both
+
+[7:51] 
+okay also peep the arrows
+
+[7:51] 
+see how i put a left and right arrow
+
+[7:51] 
+that's what im thinking to generally move people across edges
+
+mihirdubey1 [7:56 PM] 
+For now resource
+
+[7:56] 
+And even in the future maybe resource
+
+[7:56] 
+We can use the users as a general audience to tailor recommendations to
+
+[7:57] 
+But on an individual basis it would be very hard unless we gain a shitload of data
+
+[7:57] 
+But to start resources
+
+[7:57] 
+Then as we get more feedback, we can generate based off users as a shoe
+
+[7:57] 
+Whole*
+
+mihirdubey1 [7:58 PM] 
+I'm a little confused by second view
+1 reply Today at 8:00 PM View thread
+
+steviejay 
+[7:58 PM] 
+okay legit
+
+[7:58] 
+i just asked my vp of eng
+
+[7:58] 
+im not 1000% sure it was a smooth move
+
+[7:58] 
+but
+
+[7:58] 
+he entertained me
+
+[7:59] 
+and said
+
+[7:59] 
+he would probably end up using a graph database
+
+[7:59] 
+basically he said
+
+[7:59] 
+if your data structure is a graph
+
+[7:59] 
+you should probably be using a graph db
+
+[8:00] 
+i'll probably end up trying both
+
+[8:02] 
+im going to ask nikita
+
+[8:02] 
+from learn-anything
+
+mihirdubey1 [8:08 PM] 
+Does the JSON count as a graph db
+
+steviejay 
+[8:08 PM] 
+no
+
+[8:08] 
+but its non-relational
+
+[8:08] 
+its close
+
+[8:08] 
+im asking rn
+
+mihirdubey1 [8:09 PM] 
+Hmm well I'm unsure how graph will work without being very unwieldy
+
+[8:09] 
+But we can see
+
+steviejay 
+[8:09 PM] 
+steviejay [5:08 PM] 
+how are yall planning to model this data? i checked out the json docs for each mindmap, seemed like a graphical form
+
+
+new messages
+nikita
+[5:08 PM] 
+currently the data is stored in DynamoDB
+
+
+[5:08] 
+but will very soon be stored in elasticsearch
+
+
+[5:08] 
+as far as how we are modelling the data I am not entirely sure, best to ask @nglgzz
+
+
+[5:09] 
+I think it stores the JSON we have on the GitHub repo inside the Elasticsearch
+
+[8:10] 
+elasticsearch is a db primed for esarching
+
+[8:10] 
+and it stores JSON like objects
+
+mihirdubey1 [8:11 PM] 
+For second view what exactly is that page
+
+steviejay 
+[8:11 PM] 
+so let's say
+
+[8:11] 
+one of the threads
+
+[8:11] 
+is a video fo someone explaining back propagation
+
+[8:11] 
+for two mins
+
+[8:11] 
+thats the video
+
+[8:11] 
+lets say the immediate neighbor is another video
+
+[8:11] 
+thats what the left and right videos are for
+
+mihirdubey1 [8:13 PM] 
+So it's like the info for that thread ?
+
+steviejay 
+[8:13 PM] 
+yeah
+
+[8:13] 
+its the thread
+
+[8:13] 
+that's it
+
+[8:13] 
+what is in ur mind of a thread
+
+[8:13] 
+waht'd u think it was gna be like
+
+[8:14] 
+ikita
+[5:08 PM] 
+currently the data is stored in DynamoDB
+
+
+[5:08] 
+but will very soon be stored in elasticsearch
+
+
+[5:08] 
+as far as how we are modelling the data I am not entirely sure, best to ask @nglgzz
+
+
+[5:09] 
+I think it stores the JSON we have on the GitHub repo inside the Elasticsearch
+
+
+steviejay [5:09 PM] 
+gotcha -- i see thanks!
+
+
+[5:10] 
+very interesting
+
+
+new messages
+nikita [5:13 PM] 
+We were exploring a graph DB but neither of us has any experience in working with them
+
+
+[5:13] 
+but it is an option too :slightly_smiling_face:
+
+mihirdubey1 [8:14 PM] 
+I think that's ok I'm just clarifying
+
+[8:14] 
+If u clicked the fork column
+
+[8:14] 
+Would it go to the first view
+
+steviejay 
+[8:14 PM] 
+yeah that's what im tryna figure out rn
+
+[8:14] 
+no
+
+[8:14] 
+i think it would recommend the next threads
+
+[8:15] 
+or i could just add
+
+[8:15] 
+new arrows
+
+[8:15] 
+to indiacte forks
+
+mihirdubey1 [8:15 PM] 
+I think new arrows on the same page would get unwieldy
+
+[8:15] 
+On the fork page
+
+[8:15] 
+You can add though
+
+[8:15] 
+And have the different threads branching out
+
+[8:16] 
+But those are under threads right
+
+[8:16] 
+I think side threads are less impt b/c they're more impt in relation to the parent node above
+
+steviejay 
+[8:16 PM] 
+uploaded this image: Screen Shot 2017-08-14 at 5.16.16 PM.png
+Add Comment
+
+steviejay 
+[8:16 PM] 
+lmfao
+
+mihirdubey1 [8:16 PM] 
+So ppl will often go backwards to see the side thread if that makes sense
+
+steviejay 
+[8:17 PM] 
+does it make more sense now
+
+mihirdubey1 [8:27 PM] 
+ok ya makes sense
+
+[8:27] 
+i like second view
+
+[8:27] 
+but maybe add a 4th column
+
+steviejay 
+[8:27 PM] 
+you do?
+
+[8:27] 
+not the arrows tho right
+
+mihirdubey1 [8:27 PM] 
+as the first column
+
+steviejay 
+[8:27 PM] 
+it's messy
+
+mihirdubey1 [8:27 PM] 
+that just gives the basic information of the video
+
+[8:27] 
+as the main page
+
+steviejay 
+[8:27 PM] 
+oh yah that's a good idea
+
+mihirdubey1 [8:27 PM] 
+the teacher notes don't need to come up immediately
+
+[8:27] 
+ya i think side arrows may be unnessary
+
+[8:27] 
+i think up and down is more impt
+
+steviejay 
+[8:27 PM] 
+wait
+
+[8:27] 
+what's up and down
+
+[8:27] 
+that is up and down
+
+[8:28] 
+right is to child
+
+[8:28] 
+left is to parent
+
+mihirdubey1 [8:28 PM] 
+aren't the forks the child nodes?
+
+steviejay 
+[8:28 PM] 
+im thinking its both
+
+[8:28] 
+the arrows are children
+
+[8:28] 
+and parents
+
+[8:28] 
+same with forks
+
+mihirdubey1 [8:28 PM] 
+like which thread in the forks would the right arrow go to
+
+steviejay 
+[8:28 PM] 
+so assume it looks really beuatiful
+
+[8:28] 
+but the top arrow would go to A
+
+[8:28] 
+mid arrow goes to B
+
+[8:28] 
+bottom arrow goes to C
+
+[8:29] 
+or you can go below and look for info on WHY you would choose one fo those options
+
+mihirdubey1 [8:29 PM] 
+oh sorry i just saw the arrows on the new pic lol
+
+[8:29] 
+i was thinking of the original pic
+
+[8:29] 
+with one arrow
+
+[8:29] 
+on the riht
+
+[8:29] 
+right
+
+steviejay 
+[8:29 PM] 
+ok
+
+[8:29] 
+yeah does that make sense
+
+mihirdubey1 [8:30 PM] 
+it makes sense but be better if they can just click on the thread in the forks to go to the child node
+
+[8:30] 
+instead of using an arrow
+
+[8:30] 
+but there should be an arrow or something pointing to the parent node
+
+steviejay 
+[8:30 PM] 
+thats the left arrow
+
+[8:30] 
+the left arrow would go to parent
+
+mihirdubey1 [8:30 PM] 
+ya ik, i think the left is good
+
+[8:31] 
+i just think the right might get unnecessarily cluttered since you can click in the fork anyways
+
+[8:31] 
+we can view both though
+
+[8:31] 
+also what if there are multiple parent nodes
+
+[8:31] 
+like if multiple parents lead to a child
+
+[8:32] 
+then do we show them all the parent nodes or just the one they came from? That might be harder since we'll have to track which parent node they were on
+
+steviejay 
+[8:32 PM] 
+im thinking
+
+[8:32] 
+thats a good point actually
+
+[8:32] 
+i think showing one parent is clean
+
+[8:32] 
+in addition im thinking a breadcrumb
+
+[8:32] 
+might be the best way to display this
+
+[8:32] 
+breadcrumbs are just like history (how did i get here?) sorta tabs
+
+[8:32] 
+you see them everywhere
+
+steviejay 
+[8:33 PM] 
+uploaded this image: Screen Shot 2017-08-14 at 5.33.00 PM.png
+Add Comment
+
+steviejay 
+[8:33 PM] 
+peep the breadcrumb here
+
+mihirdubey1 [8:33 PM] 
+that's what i was thinking for parent node
+
+[8:33] 
+except yeah you do it for all the past parent nodes
+
+steviejay 
+[8:33 PM] 
+okay i'll probably design all of these
+
+[8:33] 
+and we'll have to test it
+
+[8:33] 
+check which one is most intuitive
+
+mihirdubey1 [8:33 PM] 
+the only thing is we want the site to be flexible for the user
+
+[8:34] 
+so say they want to jump into the middle of a twine
+
+[8:34] 
+will tracking all the parent nodes prevent us from letting them do that?
+
+steviejay 
+[8:34 PM] 
+fuckkk
+
+[8:34] 
+yeah i didnt even think of that
+
+mihirdubey1 [8:34 PM] 
+I guess we could just start with that one being the parent node
+
+steviejay 
+[8:34 PM] 
+i think "resuming a twine" would be the way to get that
+
+[8:34] 
+yeah just note where in the graph they are
+
+mihirdubey1 [8:34 PM] 
+ok so that's actually something to clarify
+
+[8:34] 
+are they going thorugh twines like
+
+[8:34] 
+as a class
+
+[8:35] 
+or is this a site where someone can jump on and just kind of casuaally see the connections between subjects
+
+steviejay 
+[8:35 PM] 
+i think from a design perspective
+
+[8:35] 
+they should be going through twines
+
+[8:35] 
+like learn-anything is a view of all the connections
+
+[8:35] 
+i think we should backlog <testing out a whole view like learn-anything> (edited)
+
+mihirdubey1 [8:36 PM] 
+well I don't think they should be able to physically view everything
+
+[8:36] 
+but should they be able to "access" everything
+
+steviejay 
+[8:36 PM] 
+mmmm
+
+mihirdubey1 [8:36 PM] 
+or do they need to start with a parent and can only read a certain node by getting to that point in a twine
+
+[8:37] 
+I think with ppl starting from different learning backgrounds, we might want to give them the flexibility to start where they're more comfortable
+
+steviejay 
+[8:37 PM] 
+dude fuck im losing chat history
+
+[8:37] 
+im going to start saving our chats rn
+
+[8:37] 
+cuz i need what we talked about before
+
+Pinned
+mihirdubey1 [8:37 PM] 
+we could have a column like the forks column with parent nodes ?
+
+[8:38] 
+lolz, I think that JSON stuff is impt so try to save that
+
+steviejay 
+[8:38 PM] 
+its gone already
+
+[8:38] 
+lmao
+
+[8:39] 
+im pinning where ive saved up to
+
+mihirdubey1 [8:39 PM] 
+are you on your phone or laptop
+
+steviejay 
+[8:39 PM] 
+laptop
+
+mihirdubey1 [8:39 PM] 
+i still have stuff on my laptop
+
+[8:39] 
+like the JSON stuff
+
+steviejay 
+[8:39 PM] 
+send it to me
+
+[8:39] 
+this is the earliest message i have
+
+Pinned
+steviejay 
+[8:39 PM] 
+uploaded this image: Screen Shot 2017-08-14 at 5.39.30 PM.png
+Add Comment
+
+
+
+steviejay 
+[8:40 PM] 
+fuck maybe i should write a pplugin that does this for us
+
+
+[8:40] 
+i feel like it'd be against slack's TOS
+
+
+mihirdubey1 [8:40 PM] 
+oh you mean outside of our thread lol, I just meant i could scroll back
+
+
+steviejay 
+[8:40 PM] 
+i mean inside this channel
+
+
+[8:41] 
+i've lost everything previous to that
+
+
+mihirdubey1 [8:41 PM] 
+I can scroll back to the beginning of our channel chat
+
+
+steviejay 
+[8:41 PM] 
+yeah send dat ot me
+
+
+mihirdubey1 [8:41 PM] 
+like when you sent that pdf
+
+
+[8:41] 
+can i download it all ?
+
+
+steviejay 
+[8:41 PM] 
+if u can just copy and paste
+
+
+[8:41] 
+thats cool
