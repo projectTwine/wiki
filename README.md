@@ -29,7 +29,7 @@ to find better material to fill those gaps, or better yet produce the content ne
 
 
 # Infrastructure 
-* Trello boards for hypotheses and project-specific backlogs
+* Trello boards for hypotheses, anything NOT built yet or not finalized to be built, and project-specific backlogs
 * Slack for chatting
 * Chat logs persisted on GDrive
 * Wiki Repo for notes
