@@ -7,6 +7,15 @@
 * Forks (Pending) - A fork indicates a point in a twine where learners seem to face questions that need to be answered. There are multiple ways to resolve this, by pointing to multiple threads that may resolve common follow-ups.
 * Edges (Graphs) - Relation between two threads.
 
+# Architecture
+## Microservices
+TODO: add links
+* Databases
+  * Knowledge Graph
+  * Relational Nodes
+* Collector 
+* Web Application
+
 # wiki
 everything we're thinking, think, learning learned during this process
 ##Sizable Steps
