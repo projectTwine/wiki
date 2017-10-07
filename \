@@ -1,0 +1,5 @@
+#ECS Services
+1. Relational DB
+2. Graph DB
+
+Prefer to use alpine-linux images for consistency

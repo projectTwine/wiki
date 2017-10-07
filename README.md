@@ -8,13 +8,14 @@
 * Edges (Graphs) - Relation between two threads.
 
 # Architecture
-## Microservices
-TODO: add links
+###Microservices
 * Databases
   * Knowledge Graph
-  * Relational Nodes
-* Collector 
-* Web Application
+  * Relational
+* Web Twine Platform
+* MOOC - Best Resource for a topic? (Class-central 2 levels)
+* Video analysis pipeline
+* Hot Pocket (pending)
 
 # wiki
 everything we're thinking, think, learning learned during this process
