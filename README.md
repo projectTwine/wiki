@@ -10,12 +10,13 @@
 # Architecture
 ###Microservices
 * Databases
-  * Knowledge Graph
+  * Knowledge Graph - What does a resource tell us about a user? What does a resource tell us about itself? What resources are missing? What is the shortest path to a goal? What is the most elaborate path?
   * Relational
-* Web Twine Platform
-* MOOC - Best Resource for a topic? (Class-central 2 levels)
-* Video analysis pipeline
-* Hot Pocket (pending)
+* Web Twine Platform - As a teacher, I'd like to not reteach topics and instead use resources already available on the web. How can I aggregate these resources into a course?
+* Search Engine - MOOC - What is the Best Resource for a topic? (Class-central 2 levels) 
+* Video analysis pipeline - Powers the search engine and more
+* Hot Pocket (pending) - As an employee, I'd like to add resources to the knowledge graph as I process them because I learn better than a machine will for the next decade or so.
+* School - Supply content
 
 # wiki
 everything we're thinking, think, learning learned during this process
