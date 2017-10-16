@@ -1,8 +1,8 @@
 #Typeface 
 * Everything is based off the type.
-* 20 px is the default.
+* 16px for body copy is the default.
 * 12.36 is the other font-size.
-* We use the golden ratio to find font-sizes below and above.
+* We use the perfect fourths (1.333) ratio to find font-sizes below and above.
 
 #Columns
 * Designs are based off a 1280x800 design  
