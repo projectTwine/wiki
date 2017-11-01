@@ -10,7 +10,7 @@
 # Architecture
 ###Microservices
 * Databases
-  * Knowledge Graph - What does a resource tell us about a user? What does a resource tell us about itself? What resources are missing? What is the shortest path to a goal? What is the most elaborate path?
+  * Knowledge Graph - What does a resource tell us about a user? (Degreed) What does a resource tell us about itself? What resources are missing? What is the shortest path to a goal? What is the most elaborate path? Has this been taught before? 
   * Relational
 * Web Twine Platform - As a teacher, I'd like to not reteach topics and instead use resources already available on the web. How can I aggregate these resources into a course?
 * Search Engine - MOOC - What is the Best Resource for a topic? (Class-central 2 levels) 
@@ -46,6 +46,11 @@ to find better material to fill those gaps, or better yet produce the content ne
 * Wiki Repo for notes
 
 
+#Notes on Education
+1. free K-12 is an option
+2. free needs-based higher-ed is an option.
+3. the only available market is post-college or to tap into and integrate with k-12 + higher-ed
+Perhaps, we tackle, how we enhance the teacher so that they dont have to go into a lecture.
 
 
 

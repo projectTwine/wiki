@@ -1,12 +1,12 @@
 #Typeface 
-* Everything is based off the type.
-* 20 px is the default.
-* 12.36 is the other font-size.
+* Everything is based off the type
+* 16px body copy (https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/)
+* 12.36px is the other font-size derived from 20 * goldenratio inverse
 * We use the golden ratio to find font-sizes below and above.
 
 #Columns
 * Designs are based off a 1280x800 design  
-* 12-column layout, 55px columns, 55px left-right margins, 30px gutters (based off bootstrap)
+* 12-column layout, 55px (variable) columns, 55px left-right margins, 30px (constant) gutters (based off bootstrap)
 
 #Components
 Sections should be divided by the card-format. 
