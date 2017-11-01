@@ -1,8 +1,8 @@
 #Typeface 
 * Everything is based off the type
 * 16px body copy (https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/)
-* 12.36px is the other font-size derived from 20 * goldenratio inverse
-* We use the golden ratio to find font-sizes below and above.
+* 12.36px is the other font-size derived from 20 * goldenratio inverse 
+* We use the golden ratio to find font-sizes below and above. (or is it perfect fourths)
 
 #Columns
 * Designs are based off a 1280x800 design  
