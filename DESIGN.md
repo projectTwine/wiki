@@ -3,6 +3,8 @@
 * 16px body copy (https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/)
 * 12.36px is the other font-size derived from 20 * goldenratio inverse 
 * We use the golden ratio to find font-sizes below and above. (or is it perfect fourths)
+http://type-scale.com/?size=16&scale=1.333&text=Introduction%20to%20HTML%20and%20CSS&webfont=&font-family=Futura&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
+font sizes: Font Sizes:16, 21.28, 28.32
 
 #Columns
 * Designs are based off a 1280x800 design  

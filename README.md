@@ -54,4 +54,5 @@ Perhaps, we tackle, how we enhance the teacher so that they dont have to go into
 
 
 
+https://cloud.google.com/video-intelligence/
 
