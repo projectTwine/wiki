@@ -4,3 +4,8 @@ Look at competitors
 Digital nomad movement -- teaching as a viable stream of income -- distinguishing factors become quality of teachers and quality of education
 Remaining free to upload to distinguish from Udemy because the advantage is the data science approach behind the scenes
 Video creation
+
+
+Target market:
+For learners, by learners. Construct learning curves.
+
