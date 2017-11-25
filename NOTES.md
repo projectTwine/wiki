@@ -9,3 +9,13 @@ Video creation
 Target market:
 For learners, by learners. Construct learning curves.
 
+
+
+What happens if we reverse the problem?
+Instead of going from
+get all educational videos -> teachers  
+and instead  
+went
+teachers -> videos  
+we no longer have to deal with the filtering problem. There's a high chance that a video that has a teacher is educational at this point.
+Just by reversing the many->one relationship we can get a much smoother workflow and close the data collection pipeline prototype much earlier.
