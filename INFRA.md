@@ -1,3 +1,10 @@
+#Serverless & MapReduce Prime
+Adaptation of Mapreduce model by using FaaS
+Use the Serverless framework since you can eject into Project Flourish (SAM) templates but helps us get off the ground on bleeding-edge.
+May have to review this when Lambda becomes the mainstream way to compute
+
+
+
 #ECS
 ##Services
 1. Relational DB - Connect via `psql`
